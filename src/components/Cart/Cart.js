@@ -2,13 +2,13 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
-    console.log(props)
+   
     const cart = props.cart;
 
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        total += product.price
+        total += product.price * product.quantity;
     }
     let shipping = 0;
     for (let i = 0; i < cart.length; i++) {
@@ -16,6 +16,7 @@ const Cart = (props) => {
         shipping += element.shipping
     }
    
+  
     return (
         <div className="ordered-product">
             
@@ -26,6 +27,8 @@ const Cart = (props) => {
             
                 <h5>Shipping Charge : {shipping.toFixed(2)} </h5>
                 <h5>Total Price : {(total +shipping ).toFixed(2) }</h5>
+                <br/>
+                { props.children}
              </div>
     );
 };

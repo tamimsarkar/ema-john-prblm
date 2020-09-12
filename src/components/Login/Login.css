@@ -1,0 +1,69 @@
+
+.login__area{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 40px;
+    border: 1px solid lightgray;
+    box-shadow:0px 0px 32px 1px lightgray; 
+    padding: 30px;
+   
+}
+.input__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    
+}
+.input__fields input{
+   
+    box-shadow: 4px 4px 21px lightgray;
+    padding-right: 50px;
+    padding: 10px 2px;
+    padding-left: 10px;
+    border: 1.5px lightgray solid;
+    border-radius: 4px;
+    width : 300px;
+}
+.submit__btn{
+    margin-top: 15px;
+    padding: 5px 28px;
+    border: none;
+    background-color:#0cf;
+    color: white;
+    border-radius: 4px;
+    transition:0.3s ease-in-out
+}
+.submit__btn:hover{
+    background-color: rgb(9, 100, 47);
+    padding: 10px 30px;
+    
+}
+.google__sign i {
+    font-size: 40px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    
+   
+}
+.google__sign{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    
+}
+.google__sign:hover {
+    
+    border: 1px solid ;
+  
+    transition:1s;
+}
