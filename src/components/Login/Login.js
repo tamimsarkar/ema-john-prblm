@@ -32,6 +32,7 @@ const Login = () => {
                photo : photoURL 
             }
             setUser(signedIn)
+            setLoggedInUser(signedIn)
         })
     }
       // history and location
@@ -138,7 +139,7 @@ const Login = () => {
         user.success && <p style={{color: 'green'}}> {newUser ? 'Successfully Created account' : 'Successfully logged In '} </p> 
       }   
       {/* Google Button */}
-      <button  className='google__sign' onClick={googleSign} ><i class="fab fa-google" ></i>Google Sign In</button>
+      <button  className='google__sign' onClick={googleSign} ><i className="fab fa-google" ></i>Google Sign In</button>
 
       <img src={user.photo} alt=""/>
       <p style={{color: 'red'}}>{user.error}</p>
@@ -149,3 +150,4 @@ const Login = () => {
 };
 
 export default Login;
+
